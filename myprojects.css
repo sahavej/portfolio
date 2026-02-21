@@ -1,0 +1,124 @@
+*{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background-color: #f5f7fa;
+        }
+
+        /* Navbar */
+        nav{
+            background-color: #111;
+            padding: 15px 50px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2{
+            color: #fff;
+        }
+
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            margin-left: 20px;
+            transition: 0.3s;
+        }
+
+        nav a:hover{
+            color: #00bcd4;
+        }
+
+        /* Projects Section */
+        .projects{
+            padding: 50px 10%;
+        }
+
+        .projects h1{
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 35px;
+        }
+
+        /* Grid Layout */
+        .project-container{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        /* Project Card */
+        .project-card{
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+
+        .project-card:hover{
+            transform: translateY(-8px);
+        }
+
+        .project-card img{
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .project-content{
+            padding: 20px;
+        }
+
+        .project-content h3{
+            margin-bottom: 10px;
+        }
+
+        .project-content p{
+            font-size: 14px;
+            margin-bottom: 15px;
+            color: #555;
+        }
+
+        /* Buttons */
+        .btns{
+            display: flex;
+            gap: 10px;
+        }
+
+        .btn{
+            padding: 8px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .live{
+            background-color: #00bcd4;
+            color: #fff;
+        }
+
+        .github{
+            background-color: #333;
+            color: #fff;
+        }
+
+        .btn:hover{
+            opacity: 0.8;
+        }
+
+        /* Footer */
+        footer{
+            text-align: center;
+            padding: 20px;
+            background: #111;
+            color: #fff;
+            margin-top: 40px;
+        }
